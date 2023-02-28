@@ -15,7 +15,6 @@ def generate_plain_response(prompt):
         prompt=prompt,
         max_tokens=MAX_TOKENS,
         temperature=0.5,
-        top_p=1,
         frequency_penalty=0,
         presence_penalty=0
     )
@@ -29,7 +28,6 @@ def generate_response_with_context(prompt, context):
         prompt="context:" + context + "\n\n" + "prompt:" + prompt,
         max_tokens=MAX_TOKENS,
         temperature=0.5,
-        top_p=1,
         frequency_penalty=0,
         presence_penalty=0
     )
